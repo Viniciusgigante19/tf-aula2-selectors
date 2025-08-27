@@ -33,7 +33,7 @@
     text-decoration: underline;
 }
 
-[data-role='user']{
+[data-role~='user']{
     font-style: italic;
 }
 
@@ -45,8 +45,8 @@ ul> li:nth-of-type(6)>code{
     border:1px solid blue;
 }
 
-.ativo{
-    background-color: #414141;
+.content ul.demo>li.ativo{
+    background-color: #525252;
 }
 .item{
     font:bold;
@@ -70,13 +70,15 @@ ul> li:nth-of-type(6)>code{
         display: flex;
         flex-direction: column;
     }
-    aside{
+    aside {
         width: 100%;
-        display: flex;
+        display: block;
     }
-    aside img{
-        margin: auto;
-        width: 1000px;
-        
+
+    aside img {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
 }
