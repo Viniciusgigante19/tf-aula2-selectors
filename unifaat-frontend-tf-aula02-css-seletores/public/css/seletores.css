@@ -1,0 +1,82 @@
+.content ul.demo {
+    list-style: none;
+    margin: 0;
+}
+
+.content ul.demo>li {
+    border-left: 2px solid transparent;
+    background-color: #F0F0F0;
+    padding: 8px;
+    margin-bottom: 2px;
+}
+
+.content ul.demo>li.selected {
+    border-left: 2px solid #000;
+    background-color: #00FF00;
+}
+
+
+/** CODAR SELETORES **/
+
+/* EX 1*/
+.content ul.demo>li:first-child {
+    background-color: yellow;
+}
+
+/** Continue aqui **/
+
+#unico{
+    color:red;
+}
+
+[data-type="attr"]{
+    text-decoration: underline;
+}
+
+[data-role='user']{
+    font-style: italic;
+}
+
+li>code:first-child{
+    font-size: larger;
+}
+
+ul> li:nth-of-type(6)>code{
+    border:1px solid blue;
+}
+
+.ativo{
+    background-color: #414141;
+}
+.item{
+    font:bold;
+}
+.destaque{
+    font:bold;
+    font-size: large;
+}
+[lang='pt-br']{
+    color: green;
+}
+[title='começa-com']>code{
+    font-style: italic;
+}
+[title='termina-com']>code{
+    background-color: pink;
+}
+
+@media (max-width:768px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+        display: flex;
+    }
+    aside img{
+        margin: auto;
+        width: 1000px;
+        
+    }
+}
